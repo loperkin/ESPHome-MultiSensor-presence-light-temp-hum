@@ -21,7 +21,11 @@ I do get a small commision for these links but I personaly did purchase these fo
 
 OPTIONALS:
 
-Any wiring accessories you may want like a [breadboard](https://amzn.to/4beOWds), [wire](https://amzn.to/4p9BBXd), [project box(wood craft boxes are fun)](https://amzn.to/49zvOor), [connectors](https://amzn.to/4peqV9V), [usb-c cords](https://amzn.to/4b9XnGZ) and [powerbricks](https://amzn.to/4ph2mJs).
+Any wiring accessories you may want like a [breadboard](https://amzn.to/4beOWds), [wire](https://amzn.to/4p9BBXd), [jumper wire kit](https://amzn.to/3KTa0Ma) ,  [project box(wood craft boxes are fun)](https://amzn.to/49zvOor), [connectors](https://amzn.to/4peqV9V), [usb-c cords](https://amzn.to/4b9XnGZ) and [powerbricks](https://amzn.to/4ph2mJs).
+
+Tools:
+
+[Soldering Station](https://amzn.to/3YbfWDh), [Solder Flux](https://amzn.to/4sbSXpr), [wire strippers](https://amzn.to/4q7xsnW)
 
 Wiring:
 
