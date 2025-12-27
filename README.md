@@ -25,7 +25,7 @@ Any wiring accessories you may want like a [breadboard](https://amzn.to/4beOWds)
 
 Wiring:
 
-<img width="550" height="547" alt="Screenshot 2025-12-27 at 9 47 16 AM" src="https://github.com/user-attachments/assets/4706243c-440f-4de9-94c6-c80cd44e564b" />
+<img width="400" height="347" alt="Screenshot 2025-12-27 at 9 47 16 AM" src="https://github.com/user-attachments/assets/4706243c-440f-4de9-94c6-c80cd44e564b" />
 
 Programing:
 
@@ -35,3 +35,6 @@ If you have a new C3 supermini it probably defaults to sleep and awake, over and
 
 Check out the Automation Examples.
 
+Dashboard:
+
+Example of fun badges for a room <img width="413" height="57" alt="Screenshot 2025-12-27 at 10 17 55 AM" src="https://github.com/user-attachments/assets/5e5d9b20-d28b-472b-a55c-b2dee6bfa59b" />
