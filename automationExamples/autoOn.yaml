@@ -1,0 +1,111 @@
+alias: Auto On Room
+description: ""
+triggers:
+# ID's have been removed, This is the precense binary sensor
+  - type: occupied
+    device_id: 
+    entity_id: 
+    domain: binary_sensor
+    trigger: device
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 2
+conditions:
+
+actions:
+
+# some rooms have multiple lights and i use the sunset and sunrise as conditions for actions. I also have TV plugs on tv's so sometimes there is plenty of light but the TV needs power 
+  - choose:
+      - conditions:
+#condition for night time
+          - condition: sun
+            after: sunset
+            before: sunrise
+        sequence:
+#turns on lamps and tv plug
+          - type: turn_on
+            device_id: 
+            entity_id: 
+            domain: switch
+          - type: turn_on
+            device_id: 
+            entity_id: 
+            domain: switch
+      - conditions:
+          - condition: and
+            conditions:
+#condition for day time but not 6am-8am and light is below 14 lumens
+              - condition: sun
+                before: sunset
+                after: sunrise
+              - condition: not
+                conditions:
+                  - condition: time
+                    after: "06:00:00"
+                    before: "08:00:00"
+                    weekday:
+                      - sat
+                      - fri
+                      - thu
+                      - wed
+                      - tue
+                      - mon
+                      - sun
+              - condition: numeric_state
+                entity_id: sensor.multi_sensor_illuminance
+                below: 14
+        sequence:
+#turns on overhead light and tv plug
+          - type: turn_on
+            device_id: 
+            entity_id: 
+            domain: switch
+          - type: turn_on
+            device_id: 
+            entity_id: 
+            domain: switch
+      - conditions:
+          - condition: and
+            conditions:
+  #condition for day time and time is 6am-8am and light is below 14 lumens
+              - condition: sun
+                before: sunset
+                after: sunrise
+              - condition: numeric_state
+                entity_id: sensor.multi_sensor_illuminance
+                below: 14
+              - condition: time
+                after: "06:00:00"
+                before: "08:00:00"
+                weekday:
+                  - sat
+                  - fri
+                  - thu
+                  - wed
+                  - tue
+                  - mon
+                  - sun
+        sequence:
+#just turn on tv plug
+          - type: turn_on
+            device_id: 
+            entity_id: 
+            domain: switch
+      - conditions:
+          - condition: and
+            conditions:
+  #day time and light is above 13.9 lumens
+              - condition: sun
+                before: sunset
+                after: sunrise
+              - condition: numeric_state
+                entity_id: sensor.multi_sensor_illuminance
+                above: 13.9
+        sequence:
+  #just turn on tv plug
+          - type: turn_on
+            device_id: 
+            entity_id: 
+            domain: switch
+mode: single
