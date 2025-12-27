@@ -25,7 +25,7 @@ Any wiring accessories you may want like a [breadboard](https://amzn.to/4beOWds)
 
 Tools:
 
-[Soldering Station](https://amzn.to/3YbfWDh), [Solder Flux](https://amzn.to/4sbSXpr), [wire strippers](https://amzn.to/4q7xsnW)
+[Soldering station](https://amzn.to/3YbfWDh), [solder flux](https://amzn.to/4sbSXpr), [wire strippers](https://amzn.to/4q7xsnW)
 
 Wiring:
 
