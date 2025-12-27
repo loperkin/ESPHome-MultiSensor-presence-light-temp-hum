@@ -27,3 +27,11 @@ Wiring:
 
 <img width="550" height="547" alt="Screenshot 2025-12-27 at 9 47 16 AM" src="https://github.com/user-attachments/assets/4706243c-440f-4de9-94c6-c80cd44e564b" />
 
+Programing:
+
+The esphome builder code is in the firmware folder. Please have a look and read. You must copy the components of the code you want into your own esphome builder device.
+
+If you have a new C3 supermini it probably defaults to sleep and awake, over and over. You need to press and hold boot, then press reset and release, then release boot buttons. This method will allow the C3 supermini to program via usb.
+
+Check out the Automation Examples.
+
