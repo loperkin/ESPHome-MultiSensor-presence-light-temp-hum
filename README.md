@@ -50,3 +50,5 @@ PCB: This is a PCB for this sensor. If you do not feel like building this on bre
 [Purchase PCB](https://www.paypal.com/instantcommerce/checkout/GRGFRKEN94Z84)
 
 [Purchase PCB and all components](https://www.paypal.com/instantcommerce/checkout/KM33ATDQLENEC)
+
+Or the Gerber files are attached so you can have the PCB built yourself. Design also available at [oshwlab](https://oshwlab.com/rockdown/multi-sensor)
