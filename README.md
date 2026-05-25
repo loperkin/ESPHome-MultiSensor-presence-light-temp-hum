@@ -43,7 +43,10 @@ Dashboard:
 
 Example of fun badges for a room <img width="413" height="57" alt="Screenshot 2025-12-27 at 10 17 55 AM" src="https://github.com/user-attachments/assets/5e5d9b20-d28b-472b-a55c-b2dee6bfa59b" />
 
-PCB: This is a PCB for this sensor. If you do not feel like building this on breadboard we plan to have a PCB made or purchased. Coming soon. 
+PCB: This is a PCB for this sensor. If you do not feel like building this on breadboard, purchase the PCB or have it made with the files.
 
 <img width="500" height="250" alt="Screenshot 2025-12-31 at 12 07 59 PM" src="https://github.com/user-attachments/assets/16a1debe-daa2-4db9-a210-6be6bd7deb20" />
 
+[Purchase PCB](https://www.paypal.com/instantcommerce/checkout/GRGFRKEN94Z84)
+
+[Purchase PCB and all components](https://www.paypal.com/instantcommerce/checkout/KM33ATDQLENEC)
