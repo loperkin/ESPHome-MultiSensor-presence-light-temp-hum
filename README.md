@@ -11,21 +11,21 @@ Features:
 * Simple integration the popular platforms ESPHome and Home Assistant
 
 Supplies:
-  * esp32-c3 supermini → [Amazon](https://amzn.to/4qy8IoZ)  bigger pack [Amazon](https://amzn.to/4jgqCdq)
-  * breadboards → [Amazon](https://amzn.to/3PnCKip)
-  * HLK-LD2410C Presence Sensors → [Amazon](https://amzn.to/4slox4a)  FYI some precense sensors do not like ceiling fans. I have these in rooms with ceiling fans and they think that the room is occupied when the fan runs. I just take steps to avoid that. The b model can supposidly create an ignore zone but I do not have much issue with ceiling fans and this c model.
-  * BH1750 Light Sensors → [Amazon](https://amzn.to/497iB5O)
-  * DHT22 Temperature and Humidity Sensors → [Amazon](https://amzn.to/3YemiSc)
+  * esp32-c3 supermini → [Amazon](https://amzn.to/46SiDOh) bigger pack [Amazon](https://amzn.to/4jtJqYC)
+  * breadboards → [Amazon](https://amzn.to/3TvAQ0U)
+  * HLK-LD2410C Presence Sensors → [Amazon](https://amzn.to/4z05qyP)  FYI some precense sensors do not like ceiling fans. I have these in rooms with ceiling fans and they think that the room is occupied when the fan runs. I just take steps to avoid that. The b model can supposidly create an ignore zone but I do not have much issue with ceiling fans and this c model.
+  * BH1750 Light Sensors → [Amazon](https://amzn.to/4e47EFg)
+  * DHT22 Temperature and Humidity Sensors → [Amazon](https://amzn.to/4ys3nUs)
 
 I do get a small commision for these links but I personaly did purchase these for this project.
 
 OPTIONALS:
 
-Any wiring accessories you may want like a [breadboard](https://amzn.to/3PnCKip), [wire](https://amzn.to/4p9BBXd), [jumper wire kit](https://amzn.to/4f6YU2G) , [connectors](https://amzn.to/4peqV9V), [usb-c cords](https://amzn.to/4b9XnGZ) and [powerbricks](https://amzn.to/4ph2mJs).
+Any wiring accessories you may want like a [breadboard](https://amzn.to/3TvAQ0U), [wire](https://amzn.to/4AUwiCm), [jumper wire kit](https://amzn.to/4ypj52L) , [connectors](https://amzn.to/4rFU4hc), [usb-c cords](https://amzn.to/3VaIoXF) and [powerbricks](https://amzn.to/4hkBdoj).
 
 Tools:
 
-[Soldering station](https://amzn.to/3YbfWDh), [solder flux](https://amzn.to/4sbSXpr), [wire strippers](https://amzn.to/4q7xsnW)
+[Soldering station](https://amzn.to/4jf3w9d), [solder flux](https://amzn.to/3VYDqgL), [wire strippers](https://amzn.to/4jf3zBV)
 
 Wiring:
 
