@@ -1,0 +1,169 @@
+alias: HVAC Vent Control - Example Room
+description: >
+  Example automation for controlling a smart HVAC vent using a room
+  temperature sensor and the HVAC state and target temperature reported
+  by a Home Assistant climate entity.
+
+triggers:
+  # Re-evaluate whenever the thermostat changes state or attributes.
+  - trigger: state
+    entity_id: climate.thermostat
+    id: thermostat_changed
+
+  # Re-evaluate whenever the room temperature changes.
+  - trigger: state
+    entity_id: sensor.room_multi_sensor_temperature
+    id: room_temperature_changed
+
+  # Re-evaluate after Home Assistant starts.
+  - trigger: homeassistant
+    event: start
+    id: ha_start
+
+  # Fail-safe if the room temperature sensor is unavailable for 3 minutes.
+  - trigger: state
+    entity_id: sensor.room_multi_sensor_temperature
+    to:
+      - unavailable
+      - unknown
+    for:
+      minutes: 3
+    id: sensor_unavailable
+
+conditions: []
+
+actions:
+  # Store the values used by the automation.
+  - variables:
+      room_temp: >
+        {{ states('sensor.room_multi_sensor_temperature') | float(none) }}
+
+      target_temp: >
+        {{ state_attr('climate.thermostat', 'temperature') | float(none) }}
+
+      hvac_action: >
+        {{ state_attr('climate.thermostat', 'hvac_action') }}
+
+  - choose:
+
+      # ---------------------------------------------------------------
+      # FAIL-SAFE
+      # If the room temperature sensor has been unavailable for
+      # 3 minutes, fully open the vent.
+      # ---------------------------------------------------------------
+      - conditions:
+          - condition: trigger
+            id: sensor_unavailable
+        sequence:
+          - action: cover.set_cover_position
+            target:
+              entity_id: cover.room_hvac_vent
+            data:
+              position: 100
+
+      # ---------------------------------------------------------------
+      # COOLING
+      #
+      # Room is at or below target:
+      #   Close the vent because this room does not need more cooling.
+      #
+      # Room is above target:
+      #   Fully open the vent.
+      # ---------------------------------------------------------------
+      - conditions:
+          - condition: template
+            value_template: >
+              {{ hvac_action == 'cooling'
+                 and room_temp is not none
+                 and target_temp is not none }}
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: >
+                      {{ room_temp <= target_temp }}
+                sequence:
+                  - action: cover.set_cover_position
+                    target:
+                      entity_id: cover.room_hvac_vent
+                    data:
+                      position: 0
+
+            default:
+              - action: cover.set_cover_position
+                target:
+                  entity_id: cover.room_hvac_vent
+                data:
+                  position: 100
+
+      # ---------------------------------------------------------------
+      # HEATING
+      #
+      # Room is below target:
+      #   Open the vent to 50 percent.
+      #
+      # Room is at or above target:
+      #   Close the vent.
+      # ---------------------------------------------------------------
+      - conditions:
+          - condition: template
+            value_template: >
+              {{ hvac_action == 'heating'
+                 and room_temp is not none
+                 and target_temp is not none }}
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: >
+                      {{ room_temp < target_temp }}
+                sequence:
+                  - action: cover.set_cover_position
+                    target:
+                      entity_id: cover.room_hvac_vent
+                    data:
+                      position: 50
+
+            default:
+              - action: cover.set_cover_position
+                target:
+                  entity_id: cover.room_hvac_vent
+                data:
+                  position: 0
+
+      # ---------------------------------------------------------------
+      # HVAC IDLE
+      # Fully open the vent when the HVAC system is not actively
+      # heating or cooling.
+      # ---------------------------------------------------------------
+      - conditions:
+          - condition: template
+            value_template: >
+              {{ hvac_action == 'idle' }}
+        sequence:
+          - action: cover.set_cover_position
+            target:
+              entity_id: cover.room_hvac_vent
+            data:
+              position: 100
+
+    # ---------------------------------------------------------------
+    # DEFAULT FAIL-SAFE
+    # If the room temperature cannot be read for any other reason,
+    # leave the vent fully open.
+    # ---------------------------------------------------------------
+    default:
+      - if:
+          - condition: template
+            value_template: >
+              {{ room_temp is none }}
+        then:
+          - action: cover.set_cover_position
+            target:
+              entity_id: cover.room_hvac_vent
+            data:
+              position: 100
+
+mode: restart
+
+
