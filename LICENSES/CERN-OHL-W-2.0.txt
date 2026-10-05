@@ -1,0 +1,9 @@
+CERN-OHL-W-2.0
+
+CERN Open Hardware Licence
+CERN has developed the CERN Open Hardware Licence (CERN OHL) as a legal tool to promote collaboration among hardware designers and support the freedom to use, study, modify, share and distribute hardware designs, and products based on those designs. As the custodian of the CERN OHL, CERN releases new versions and variants from time to time to address new problems or concerns, but which it considers to be in the same spirit as previous versions. The current version is version 2, and you can regard the CERN OHL text linked from this page as definitive. Version 2 of the CERN OHL comes in three variants:
+
+CERN-OHL-S (strongly reciprocal, txt , pdf )
+CERN-OHL-W (weakly reciprocal, txt , pdf )
+CERN-OHL-P (permissive, txt , pdf )
+Please visit the CERN OHL v2 home  to access more information about the three variants, including a rationale document explaining drafting decisions and a list of frequently asked questions.
