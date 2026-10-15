@@ -48,8 +48,7 @@ Whether you're interested in home automation, energy savings, environmental moni
 
 ### Main Components
 
-- **ESP32-C3 Super Mini** → [Amazon](https://amzn.to/46SiDOh)  
-  Larger pack → [Amazon](https://amzn.to/4jtJqYC)
+- [**ESP32-C3 Super Mini** →](https://geni.us/mZse)   
 
 - **HLK-LD2410C mmWave Presence Sensor** → [Amazon](https://amzn.to/4z05qyP)
 
