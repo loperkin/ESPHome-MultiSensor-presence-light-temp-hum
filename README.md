@@ -56,7 +56,7 @@ Whether you're interested in home automation, energy savings, environmental moni
 
 - [**DHT22 Temperature & Humidity Sensor** →](https://geni.us/jqC5I) 
 
-- **Breadboards** → [Amazon](https://amzn.to/3TvAQ0U)
+- [**Breadboards** →](https://geni.us/UiAciwT) 
 
 ### A Note About Ceiling Fans
 
