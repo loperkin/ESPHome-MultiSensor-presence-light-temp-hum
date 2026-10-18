@@ -54,7 +54,7 @@ Whether you're interested in home automation, energy savings, environmental moni
 
 - [**BH1750 Ambient Light Sensor** →](https://geni.us/sySYq0f) 
 
-- **DHT22 Temperature & Humidity Sensor** → [Amazon](https://amzn.to/4ys3nUs)
+- [**DHT22 Temperature & Humidity Sensor** →](https://geni.us/jqC5I) 
 
 - **Breadboards** → [Amazon](https://amzn.to/3TvAQ0U)
 
