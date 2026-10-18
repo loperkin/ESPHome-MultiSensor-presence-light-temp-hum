@@ -50,7 +50,7 @@ Whether you're interested in home automation, energy savings, environmental moni
 
 - [**ESP32-C3 Super Mini** →](https://geni.us/mZse)   
 
-- **HLK-LD2410C mmWave Presence Sensor** → [Amazon](https://amzn.to/4z05qyP)
+- [**HLK-LD2410C mmWave Presence Sensor** →](https://geni.us/TfpZvN) 
 
 - **BH1750 Ambient Light Sensor** → [Amazon](https://amzn.to/4e47EFg)
 
