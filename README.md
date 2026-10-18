@@ -52,7 +52,7 @@ Whether you're interested in home automation, energy savings, environmental moni
 
 - [**HLK-LD2410C mmWave Presence Sensor** →](https://geni.us/TfpZvN) 
 
-- **BH1750 Ambient Light Sensor** → [Amazon](https://amzn.to/4e47EFg)
+- [**BH1750 Ambient Light Sensor** →](https://geni.us/sySYq0f) 
 
 - **DHT22 Temperature & Humidity Sensor** → [Amazon](https://amzn.to/4ys3nUs)
 
