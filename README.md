@@ -70,7 +70,7 @@ Other LD2410 variants may provide additional configuration options, including th
 
 Depending on how you build your sensor, you may also want:
 
-- [Breadboard](https://amzn.to/3TvAQ0U)
+- [Breadboard](https://geni.us/UiAciwT) 
 - [Wire](https://amzn.to/4AUwiCm)
 - [Jumper Wire Kit](https://amzn.to/4ypj52L)
 - [Connectors](https://amzn.to/4rFU4hc)
