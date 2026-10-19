@@ -83,7 +83,7 @@ A few basic electronics tools will make the project easier:
 
 - [Soldering Station](https://geni.us/le9ZvwC)
 - [Solder Flux](https://geni.us/ZWPR)
-- [Wire Strippers](https://amzn.to/4jf3zBV)
+- [Wire Strippers](https://geni.us/RIeto)
 
 > **Affiliate Disclosure:** Some of the Amazon links above are affiliate links. I may receive a small commission if you purchase through them at no additional cost to you. These are components and tools that I personally purchased or used while developing this project.
 
