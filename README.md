@@ -82,7 +82,7 @@ Depending on how you build your sensor, you may also want:
 A few basic electronics tools will make the project easier:
 
 - [Soldering Station](https://geni.us/le9ZvwC)
-- [Solder Flux](https://amzn.to/3VYDqgL)
+- [Solder Flux](https://geni.us/ZWPR)
 - [Wire Strippers](https://amzn.to/4jf3zBV)
 
 > **Affiliate Disclosure:** Some of the Amazon links above are affiliate links. I may receive a small commission if you purchase through them at no additional cost to you. These are components and tools that I personally purchased or used while developing this project.
