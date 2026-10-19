@@ -72,7 +72,7 @@ Depending on how you build your sensor, you may also want:
 
 - [Breadboard](https://geni.us/UiAciwT) 
 - [Wire](https://geni.us/BJ17)
-- [Jumper Wire Kit](https://amzn.to/4ypj52L)
+- [Jumper Wire Kit](https://geni.us/qSjn)
 - [Connectors](https://amzn.to/4rFU4hc)
 - [USB-C Cables](https://amzn.to/3VaIoXF)
 - [USB Power Adapters](https://amzn.to/4hkBdoj)
