@@ -44,6 +44,8 @@ Whether you're interested in home automation, energy savings, environmental moni
 - Optional custom PCB
 - Fully customizable automations
 
+[YouTube Full Demo Video](https://youtu.be/qFK2t_15cas?si=_129Ov1xwxL4Gywo)
+
 ## Hardware
 
 ### Main Components
