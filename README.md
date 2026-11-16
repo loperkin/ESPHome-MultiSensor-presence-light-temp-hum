@@ -218,6 +218,8 @@ I've included the **3D-printable STL files for the original ESPHome MultiSensor*
 The enclosure gives you another option for housing the electronics rather than leaving the project exposed on a workbench.
 
 Whether you're building your first MultiSensor or making several for different rooms, having printable parts makes it easier to create a more permanent installation.
+<img width="437" height="387" alt="Screenshot 2026-11-15 at 9 51 56 AM" src="https://github.com/user-attachments/assets/a393ec88-c750-4fa1-8338-fe59bc96142f" />
+<img width="446" height="317" alt="Screenshot 2026-11-15 at 9 51 19 AM" src="https://github.com/user-attachments/assets/3e89d9de-3b42-481e-b2fb-4b7caa61deeb" />
 
 ## Download the STL Files
 
