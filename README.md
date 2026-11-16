@@ -8,6 +8,12 @@ It started as a simple idea: instead of giving Home Assistant several separate s
 
 That idea became the original **ESPHome MultiSensor** — and eventually led to several other projects and variations built around the same concept.
 
+The project includes ESPHome firmware, wiring information, custom PCB files, automation examples, and now **3D-printable STL files** so you can build your own.
+
+**[▶ Watch the Full YouTube Demo](https://youtu.be/qFK2t_15cas)**
+
+---
+
 ## What It Does
 
 The MultiSensor gives Home Assistant four useful pieces of information about a room:
@@ -42,23 +48,40 @@ Whether you're interested in home automation, energy savings, environmental moni
 - Native Home Assistant integration
 - Breadboard-friendly design
 - Optional custom PCB
+- **3D-printable enclosure files (STL)**
 - Fully customizable automations
+- Open-source firmware and hardware designs
 
-[YouTube Full Demo Video](https://youtu.be/qFK2t_15cas?si=_129Ov1xwxL4Gywo)
+## Project Files
+
+Everything needed to explore and reproduce the project is organized in this repository.
+
+| Folder / Resource | Description |
+|---|---|
+| **Firmware** | ESPHome configuration for the MultiSensor |
+| **Automation Examples** | Example Home Assistant automations |
+| **3D Print** | STL files for printing the original MultiSensor enclosure |
+| **Gerber Files** | PCB manufacturing files included in the repository |
+| **Wiring Diagram** | Connections for the ESP32-C3 and sensors |
+| **LICENSE.md** | Licensing information for the project |
+
+### Quick Links
+
+- [**Watch the YouTube Demo →**](https://youtu.be/qFK2t_15cas)
+- [**Download the 3D Printing Files →**](./3D%20Print/)
+- [**View the PCB Design on OSHWLab →**](https://oshwlab.com/rockdown/multi-sensor)
+
+---
 
 ## Hardware
 
 ### Main Components
 
-- [**ESP32-C3 Super Mini** →](https://geni.us/mZse)   
-
-- [**HLK-LD2410C mmWave Presence Sensor** →](https://geni.us/TfpZvN) 
-
-- [**BH1750 Ambient Light Sensor** →](https://geni.us/sySYq0f) 
-
-- [**DHT22 Temperature & Humidity Sensor** →](https://geni.us/jqC5I) 
-
-- [**Breadboards** →](https://geni.us/UiAciwT) 
+- [**ESP32-C3 Super Mini →**](https://geni.us/mZse)
+- [**HLK-LD2410C mmWave Presence Sensor →**](https://geni.us/TfpZvN)
+- [**BH1750 Ambient Light Sensor →**](https://geni.us/sySYq0f)
+- [**DHT22 Temperature & Humidity Sensor →**](https://geni.us/jqC5I)
+- [**Breadboards →**](https://geni.us/UiAciwT)
 
 ### A Note About Ceiling Fans
 
@@ -72,7 +95,7 @@ Other LD2410 variants may provide additional configuration options, including th
 
 Depending on how you build your sensor, you may also want:
 
-- [Breadboard](https://geni.us/UiAciwT) 
+- [Breadboard](https://geni.us/UiAciwT)
 - [Wire](https://geni.us/BJ17)
 - [Jumper Wire Kit](https://geni.us/qSjn)
 - [Connectors](https://geni.us/77p986)
@@ -87,7 +110,9 @@ A few basic electronics tools will make the project easier:
 - [Solder Flux](https://geni.us/ZWPR)
 - [Wire Strippers](https://geni.us/RIeto)
 
-> **Affiliate Disclosure:** Some of the Amazon links above are affiliate links. I may receive a small commission if you purchase through them at no additional cost to you. These are components and tools that I personally purchased or used while developing this project.
+> **Affiliate Disclosure:** Some of the links above are affiliate links. I may receive a small commission if you purchase through them at no additional cost to you. These are components and tools that I personally purchased or used while developing this project.
+
+---
 
 ## Wiring
 
@@ -126,11 +151,11 @@ The real advantage of combining these sensors becomes apparent when you start us
 
 For example, instead of simply saying:
 
-**Motion detected → turn on light**
+**Motion detected → Turn on light**
 
-you can create logic closer to:
+You can create logic closer to:
 
-**Someone is present + the room is dark → turn on light**
+**Someone is present + The room is dark → Turn on light**
 
 Then keep the light on until the room is actually unoccupied.
 
@@ -168,23 +193,84 @@ You do **not** need to purchase a PCB from me to build this project. The hardwar
 
 ## Ready-Made PCB Options
 
-If you don't want to order and assemble the PCB yourself, I also have a couple of options available:
+If you don't want to order and assemble the PCB yourself, I also have a couple of options available.
 
 ### PCB Only
 
 For anyone who already has the components and just wants the custom board:
 
-[Purchase PCB](https://www.paypal.com/instantcommerce/checkout/GRGFRKEN94Z84)
+[**Purchase PCB →**](https://www.paypal.com/instantcommerce/checkout/GRGFRKEN94Z84)
 
 ### PCB + Components
 
 For anyone who wants the PCB along with the components needed for the MultiSensor:
 
-[Purchase PCB and Components](https://www.paypal.com/instantcommerce/checkout/KM33ATDQLENEC)
+[**Purchase PCB and Components →**](https://www.paypal.com/instantcommerce/checkout/KM33ATDQLENEC)
 
 ---
 
-## Where This Project Went Next
+# 3D Printing — Original MultiSensor Enclosure
+
+Want to give your MultiSensor a cleaner, more finished appearance?
+
+I've included the **3D-printable STL files for the original ESPHome MultiSensor** so you can print an enclosure yourself.
+
+The enclosure gives you another option for housing the electronics rather than leaving the project exposed on a workbench.
+
+Whether you're building your first MultiSensor or making several for different rooms, having printable parts makes it easier to create a more permanent installation.
+
+## Download the STL Files
+
+All available STL files for the original MultiSensor are located in the **3D Print** folder.
+
+### [**Download the 3D Printing Files →**](./3D%20Print/)
+
+You can download the files, open them in your preferred slicer, and prepare them for your printer.
+
+These files are provided so you can print and modify the enclosure yourself without needing to purchase a finished case.
+
+## Recommended Printing Considerations
+
+If you're printing the enclosure, here are a few things to consider:
+
+- **Material:** PLA or PETG are good starting options for typical indoor installations.
+- **Layer Height:** A layer height around 0.20 mm is a reasonable starting point.
+- **Infill:** Start with 15–20% infill and adjust based on the part.
+- **Supports:** Check the model orientation in your slicer to determine whether supports are necessary.
+- **Fitment:** Verify that your particular PCB and sensor modules fit before completing the assembly.
+- **Sensor Openings:** Make sure any openings for the temperature, humidity, or light sensors remain unobstructed.
+- **Ventilation:** Consider heat generated by the ESP32 and other components when evaluating temperature readings.
+
+These are general starting recommendations, not verified settings for every included STL. Adjust them for your printer, material, and the actual geometry of the parts.
+
+## Assembly and Installation
+
+Before assembling your MultiSensor:
+
+1. Print the required enclosure parts.
+2. Remove any supports and clean up the printed pieces.
+3. Test-fit the PCB and sensor modules.
+4. Check that the USB connection and any required openings remain accessible.
+5. Install the electronics and secure the enclosure using the mounting features provided by the design.
+6. Power up the device and verify that all sensors report correctly in Home Assistant.
+
+The enclosure is intended for the **original MultiSensor design**. Other versions, including the Decora MultiSensor, may require different printed parts.
+
+## Customize It
+
+One of the reasons I enjoy 3D printing is the ability to take an existing design and make it better.
+
+Want a different mounting method? A different color? Need to adjust something to fit your installation?
+
+Feel free to experiment.
+
+The mechanical design files are provided under the project's hardware license, so you can build on the original design while following the license requirements.
+
+If you print one or improve the enclosure, I'd love to see what you've created.
+
+---
+
+# Where This Project Went Next
 
 This was the **original MultiSensor** and the starting point for several of my later ESPHome projects.
 
@@ -206,20 +292,32 @@ Build it. Experiment with it. Change it. Make it useful for your own space.
 
 This project continues to evolve as I experiment with ESPHome, Home Assistant, presence detection, and room-level automation.
 
-Firmware updates, PCB revisions, automation examples, and related versions of the MultiSensor may be added over time.
+Firmware updates, PCB revisions, automation examples, 3D-printable parts, and related versions of the MultiSensor may be added over time.
 
-If you build one, modify the design, or come up with an interesting automation using it, feel free to share what you've created.
+If you build one, modify the design, print an enclosure, or come up with an interesting automation using it, feel free to share what you've created.
 
 ## 📜 License
 
 This project is open source, with licensing based on the type of material:
 
-- **Software, ESPHome configurations, Home Assistant automations and code:** MIT License
-- **PCB designs, mechanical designs and functional 3D-printable parts:** CERN-OHL-W-2.0
-- **Documentation, photos and Purpose in Practice branding:** Copyright © 2026 Lee Perkins unless otherwise noted
+- **Software, ESPHome configurations, Home Assistant automations, and code:** MIT License
+- **PCB designs, mechanical designs, and functional 3D-printable parts:** CERN-OHL-W-2.0
+- **Documentation, photos, and Purpose in Practice branding:** Copyright © 2026 Lee Perkins unless otherwise noted
 
 See [LICENSE.md](LICENSE.md) for complete licensing information.
 
-You're welcome to learn from it, build it, modify it, and improve it.
+You're welcome to learn from it, build it, modify it, and improve it in accordance with the applicable licenses.
+
+---
+
+## Purpose in Practice
+
+This project is part of **Purpose in Practice**, where I explore home automation, electronics, 3D printing, practical DIY projects, and learning by doing.
+
+The goal isn't just to show off finished projects. It's to share the process, including what worked, what didn't, and what I learned along the way.
+
+If this project helped you, consider watching the video, sharing the repository, or giving it a star on GitHub.
+
+**[▶ Watch the ESPHome MultiSensor Demo on YouTube](https://youtu.be/qFK2t_15cas)**
 
 **Learn it. Build it. Put it into practice.**
